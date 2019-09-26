@@ -15,7 +15,7 @@ if !exists('g:eighties_compute')
 endif
 
 function! eighties#EightiesResize()
-  if g:eighties_enabled && !s:in_file_browser()
+  if g:eighties_enabled
     let l:size = s:new_width()
 
     if l:size > s:current_width()
